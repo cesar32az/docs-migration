@@ -14,15 +14,15 @@ module.exports = {
   themeConfig: {
     logo: "img/reach.svg",
     sidebarDepth: 1,
-    markdown: {
-      lineNumbers: true,
-    },
     repo: "",
     editLinks: false,
     editLinkText: "",
     lastUpdated: false,
     docsDir: "",
     backToHome: "Back to home",
+    markdown: {
+      lineNumbers: true,
+    },
     navbar: [
       {
         text: "Inicio",
@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         text: "Guía",
-        link: "/guide/intro",
+        link: "/guide/",
       },
       {
         text: "Reach",
@@ -56,8 +56,7 @@ module.exports = {
           text: "Guía",
           collapsable: false,
           children: [
-            '',
-            "intro",
+            "README.md",
             "estructura",
             "contacts",
             "group-tag",

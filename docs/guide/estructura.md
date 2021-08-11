@@ -266,6 +266,6 @@ La propiedad msisdn cambió a numérico.
 }
 ```
 
-::: tip
+::: warning ATENCIÓN
 Se quitó la propiedad groups
 :::

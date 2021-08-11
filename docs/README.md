@@ -7,7 +7,7 @@ actions:
     link: /guide/estructura.html
     type: primary
   - text: Introduction
-    link: /guide/intro.html
+    link: /guide/
     type: secondary
 features:
 - title: Feature 1 Title
