@@ -1,0 +1,248 @@
+# Grupos -> Etiquetas
+
+- En el v4, los grupos fueron simplificados y ahora son llamados etiquetas
+- Se prescindieron de las siguientes propiedades:
+  - short_name
+  - description
+  - members
+  
+
+## Listando las etiquetas
+****
+
+> GET /tags
+
+Este recurso se utiliza para identificar las etiquetas a los que el contacto específico pertenece.
+
+### Ejemplo de llamada
+
+
+
+#### Llamada en v3
+
+> GET /groups
+
+#### Respuesta en v3
+
+``` json
+[
+  {
+      "short_name":"sales", 
+      "name": "Sales", 
+      "description": "Sales group",
+      "members": {"total":5, "pending":1, "confirmed":4}
+  }, ...
+]
+```
+
+
+#### Llamada en v4
+
+> GET /tags
+
+::: tip 
+Opcional se puede enviar un parámetro search para personalizar la búsqueda. 
+
+> GET /tags?search=Sport
+:::
+
+#### Respuesta en v4
+
+``` json
+[ 
+   { "name": "Sports", "count": 2 },
+   { "name": "vip", "count": 5 },
+]
+```
+
+
+
+
+
+
+## Agregar etiqueta a contacto
+****
+> POST /contacts/:msisdn/tag/:tag_name
+
+Este recurso se utiliza para agregar una etiqueta a un contacto, la etiqueta no debe contener espacios ni caractéres especiales.
+
+### Ejemplo de llamada
+
+#### Llamada en v3
+
+> POST /groups/:short_name/contacts/:msisdn
+
+
+#### Respuesta en v3
+
+Se devolverá un código que indicará si la adición del contacto fue exitosa o si ocurrió un error al ejecutar la operación. Por favor consultar la tabla de códigos de respuesta de la plataforma.
+
+
+#### Llamada en v4
+
+> POST /contacts/50235148164/tag/newTag
+
+#### Respuesta en v4
+
+Se devolverá un JSON conteniendo el objeto de tipo `Contact`
+
+``` json
+{
+   "msisdn": "50235148164",
+   "phone_number": "35148164",
+   "country_code": "502",
+   "first_name": "Josefino",
+   "last_name": "Gomez",
+   "full_name": "Josefino Gomez",
+   "status": "SUSCRIBED",
+   "added_from": "API",
+   "tags": [ "Work", "Sports", "newTag" ],
+   "profile_uid": "60eb787f96f7540689656be4",
+   "monitoring": false
+}
+```
+
+
+
+
+
+
+
+
+
+
+## Listando los contactos que pertenecen a una etiqueta
+****
+> GET /tags/:tag_name/contacts
+
+Este recurso se utiliza para obtener la lista de contactos pertenecientes a un grupo detallado por el valor `:TAG_NAME`
+
+### Ejemplo de llamada
+
+
+#### Llamada en v3
+
+> GET /groups/sales/contacts
+
+#### Respuesta en v3
+
+``` json
+[
+ { 
+   "msisdn": "50235148163",
+   "phone_number": "35148163",
+   "country_code": "502",
+   "first_name": "Rony",
+   "last_name": "Velasquez",
+   "full_name": "Rony Velasquez",
+   "status": "SUSCRIBED",
+   "added_from": "WEB_FORM",
+   "groups": ["vip", "someTag"],
+   "profile_uid": "6058c1f18bf1280651396444",
+   "monitoring": false
+ },
+ ...
+]
+```
+
+#### Llamada en v4
+
+> GET /tags/vip/contacts
+
+::: tip
+Adicional puedes agregar parámetros para personalizar la salida
+> GET /tags/vip/contacts?limit=1&start=0
+:::
+
+#### Respuesta en v4 
+
+``` json{11}
+[
+  { 
+    "msisdn": "50235148163",
+    "phone_number": "35148163",
+    "country_code": "502",
+    "first_name": "Rony",
+    "last_name": "Velasquez",
+    "full_name": "Rony Velasquez",
+    "status": "SUSCRIBED",
+    "added_from": "WEB_FORM",
+    "tags": ["vip", "someTag"],
+    "profile_uid": "6058c1f18bf1280651396444",
+    "monitoring": false
+  }, 
+  ...
+]
+```
+
+
+
+
+## Obteniendo las etiquetas a los que pertenece un Contacto
+****
+> GET /contacts/:msisdn/tags
+
+Este recurso se utiliza para identificar las etiquetas a los que el contacto específico pertenece.
+
+### Ejemplo de llamada
+
+#### Llamada en v3
+
+> GET /contacts/50212345678/groups
+
+#### Respuesta en v3
+
+``` json
+[
+  {
+    "short_name": "sales", 
+    "name": "Sales", 
+    "description": "Sales group",
+    "members": { "total": 5, "pending": 1, "confirmed": 4 }
+  },
+  ...
+]
+```
+
+
+#### Llamada en v4
+
+> GET /contacts/50235148164/tags
+
+#### Respuesta en v4
+
+``` json
+[ 
+   { "name": "Work", "count": 1 }, 
+   { "name": "Sports", "count": 4 },
+   ...
+] 
+```
+
+
+
+
+## Eliminando Etiquetas
+****
+> DELETE /tags/:tag_name
+
+Este recurso se utiliza para eliminar una etiqueta existente detallado por el valor `:TAG_NAME`
+
+### Ejemplo de llamada
+
+
+#### Llamada en v3
+
+> DELETE /groups/vip
+
+#### Respuesta en v3
+Se devolverá un código que indicará si la eliminación fue exitosa o si ocurrió un error al ejecutar la operación. Por favor consultar la tabla de códigos de respuesta de la plataforma.
+
+
+#### Llamada en v4
+
+> DELETE /tags/vip
+
+#### Respuesta en v4
+
+Se devolverá un código que indicará si la eliminación fue exitosa o si ocurrió un error al ejecutar la operación. Por favor consultar la tabla de códigos de respuesta de la plataforma.
