@@ -57,13 +57,17 @@ module.exports = {
         {
           text: "Guía",
           collapsable: false,
-          children: [
-            "README.md",
-            "estructura",
-            "contacts",
-            "group-tag",
-            "messages",
-          ],
+          children: ["README.md", "estructura"],
+        },
+        {
+          text: "Api Rest",
+          collapsable: false,
+          children: ["rest-contacts", "rest-group-tag", "rest-messages"],
+        },
+        {
+          text: "SDK's",
+          collapsable: false,
+          children: ["sdk-contacts","sdk-groups", "sdk-messages"],
         },
       ],
     },
