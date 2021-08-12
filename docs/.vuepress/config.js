@@ -12,6 +12,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    darkMode: true,
     logo: "img/reach.svg",
     sidebarDepth: 1,
     repo: "",
@@ -20,6 +21,7 @@ module.exports = {
     lastUpdated: false,
     docsDir: "",
     backToHome: "Back to home",
+    searchPlaceholder: "Search...",
     markdown: {
       lineNumbers: true,
     },

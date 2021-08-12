@@ -180,28 +180,28 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 ### Propiedades de Mensajes v4
 
 
-| Propiedad        | Tipo     |
-| ---------------- | -------- |
-| message_id       | numérico |
-| id               | texto    |
-| short_code       | texto    |
-| country          | texto    |
-| msisdn           | numérico |
-| tags             | vector   |
-| direction        | texto    |
-| status           | texto    |
-| message          | texto    |
-| total_recipients | numérico |
-| sent_from        | vector   |
-| sent_count       | numérico |
-| error_count      | numérico |
-| total_monitors   | numérico |
-| is_scheduled     | boolean  |
-| is_billable      | boolean  |
-| created_on       | Fecha    |
-| created_bt       | texto    |
-| type             | numérico |
 
+| Propiedad        | Tipo     | Descripción                                                                                                                                                                                                                                                               |
+| ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| message_id       | numérico | Identificador único del mensaje                                                                                                                                                                                                                                           |
+| id               | texto    | Identificador externo del mensaje enviado por el cliente. Este es el valor del parámetro id al enviar un mensaje. Puede servir como referencia cruzada para identificar los mensajes. Como dato adicional el maximo de caracteres es 40, si se excede producira un error. |
+| short_code       | texto    | Número por el cual fue enviado el mensaje                                                                                                                                                                                                                                 |
+| country          | texto    | Código internacional del país del destinatario                                                                                                                                                                                                                            |
+| msisdn           | texto    | Número de teléfono del destinatario en formato internacional. Sólo se debe incluir si el mensaje es de tipo individual.                                                                                                                                                   |
+| tags             | vector   | Etiquetas asignadas al contacto                                                                                                                                                                                                                                           |
+| direction        | texto    | Dirección del mensaje. MO = Entrante, MT = Saliente                                                                                                                                                                                                                       |
+| status           | texto    | Estado del mensaje: PENDING, PROCESSING, READY, SENT                                                                                                                                                                                                                      |
+| message          | texto    | Texto del mensaje                                                                                                                                                                                                                                                         |
+| total_recipients | numérico | Total de destinatarios para el mensaje, sin incluir los monitores                                                                                                                                                                                                         |
+| sent_from        | vector   | Si el valor include_recipients es verdadero “true” en la llamada, esta propiedad contendrá un listado de los destinatarios del mensaje                                                                                                                                    |
+| sent_count       | numérico | Total de mensajes enviados                                                                                                                                                                                                                                                |
+| error_count      | numérico | Total de mensajes que se registraron con error luego de enviarlos al operador                                                                                                                                                                                             |
+| total_monitors   | numérico | Total de destinatarios de monitoreo a los que se les enviará el mensaje                                                                                                                                                                                                   |
+| is_scheduled     | boolean  | Indica si el mensajes es calendarizado o no. valores: 1 - 0                                                                                                                                                                                                               |
+| is_billable      | boolean  | Indica si el mensajes es cobrado o no. valores: 1 - 0                                                                                                                                                                                                                     |
+| created_on       | Fecha    | Fecha y hora en la que se creó el mensaje                                                                                                                                                                                                                                 |
+| created_by       | texto    | Nombre del usuario que generó el mensaje                                                                                                                                                                                                                                  |
+| type             | numérico | Indica si el mensaje es individual o grupal. valores: 1 individual, 2 grupal                                                                                                                                                                                              |
 
 ::: warning ATENCIÓN
 La propiedad msisdn cambió a numérico.

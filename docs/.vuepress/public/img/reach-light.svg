@@ -15,7 +15,7 @@
    version="1.1"
    id="svg50"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="reach.svg">
+   sodipodi:docname="resvg.svg">
   <defs
      id="defs44" />
   <sodipodi:namedview
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.41670229"
-     inkscape:cx="1303.6815"
-     inkscape:cy="363.05019"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
      inkscape:document-units="mm"
-     inkscape:current-layer="Capa_1-2-5-1"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1030"
@@ -53,16 +53,24 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       style="fill:#f2f2f2;fill-opacity:1;stroke:#29272d;stroke-width:0.36244261;stroke-miterlimit:8.80000019;stroke-dasharray:none;stroke-opacity:1"
-       data-name="Capa 1"
-       id="Capa_1-2-5-1"
-       transform="matrix(11.489946,-0.06521036,0.07119391,10.580822,-454.6526,9.8565941)">
-      <path
-         style="fill:#f2f2f2;fill-opacity:1;stroke:#29272d;stroke-width:0.36244261;stroke-miterlimit:8.80000019;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:connector-curvature="0"
-         id="path10-2-7"
-         d="m 48.498447,-0.00204338 -8.63,26.77999938 12.67,-5.08 4.49,5.08 z m -4.12,21.75999938 4.12,-13.4399994 3.17,10.2399994 z"
-         class="cls-1" />
+       id="Capa_2"
+       data-name="Capa 2"
+       transform="matrix(11.365982,0,0,9.9750994,-447.84331,14.5108)">
+      <g
+         id="Capa_1-2"
+         data-name="Capa 1">
+        <polygon
+           class="cls-1"
+           points="40.36,21.82 40.34,21.83 40.36,21.83 "
+           id="polygon8"
+           style="fill:#f5f6f7" />
+        <path
+           class="cls-1"
+           d="M 48.83,0 40.2,26.78 52.87,21.7 57.36,26.78 Z M 44.71,21.76 48.83,8.32 52,18.56 Z"
+           id="path10"
+           inkscape:connector-curvature="0"
+           style="fill:#f5f6f7" />
+      </g>
     </g>
   </g>
 </svg>
