@@ -10,7 +10,7 @@
 
 ``` cs
 ResponseObjects.ApiResponse<List<ResponseObjects.MessageResponse>> response =
-                sdk.Messages.GetList(startDate, endDate, 0, 50, null);
+    sdk.Messages.GetList(startDate, endDate, 0, 50, null);
 ```
 
   </CodeGroupItem>
@@ -32,7 +32,7 @@ $response = $api->messages()->getMessages("2015-03-01", "2015-03-10");
 
 ``` cs
 ResponseObjects.ApiResponse<ResponseObjects.MessageResponse> response =
-                sdk.Messages.SendToContact(msisdn, message, id);
+    sdk.Messages.SendToContact(msisdn, message, id);
 ```
 
   </CodeGroupItem>
@@ -54,7 +54,7 @@ $response = $api->messages()->sendToContact("50212345678", "Sent from PHP SDK", 
 
 ``` cs
 ResponseObjects.ApiResponse<ResponseObjects.MessageResponse> response =
-                sdk.Messages.SendToGroups(names, message, id);
+    sdk.Messages.SendToGroups(names, message, id);
 ```
 
   </CodeGroupItem>
