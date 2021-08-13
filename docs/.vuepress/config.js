@@ -19,6 +19,7 @@ module.exports = {
     editLinks: false,
     editLinkText: "",
     lastUpdated: false,
+    contributors: false,
     docsDir: "",
     backToHome: "Back to home",
     searchPlaceholder: "Search...",
@@ -57,7 +58,7 @@ module.exports = {
         {
           text: "Guía",
           collapsable: false,
-          children: ["README.md", "estructura"],
+          children: ["README.md", "estructura", "uri"],
         },
         {
           text: "Api Rest",

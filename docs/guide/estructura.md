@@ -203,10 +203,6 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 | created_by       | texto    | Nombre del usuario que generó el mensaje                                                                                                                                                                                                                                  |
 | type             | numérico | Indica si el mensaje es individual o grupal. valores: 1 individual, 2 grupal                                                                                                                                                                                              |
 
-::: warning ATENCIÓN
-La propiedad msisdn cambió a numérico.
-:::
-
 ### Ejemplos del JSON
 
 
@@ -256,8 +252,8 @@ La propiedad msisdn cambió a numérico.
    "sent_count": 0,
    "error_count": 0,
    "total_recipients": 1,
-   "msisdn": 50235148164,
-   "country": 502,
+   "msisdn": "50235148164",
+   "country": "502",
    "is_billable": true,
    "is_scheduled": false,
    "created_on": "2021-07-11 17:38:34",

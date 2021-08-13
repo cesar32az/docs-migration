@@ -3,7 +3,6 @@
 ## Listando los mensajes enviados
 ****
 
-> GET /messages
 
 Este recurso se utiliza para obtener el listado de los mensajes enviados.
 
@@ -57,9 +56,9 @@ Este recurso se utiliza para obtener el listado de los mensajes enviados.
 ## Enviando mensajes individuales
 ****
 
-> POST /messages/send_to_contact
-
-Este recurso se utiliza para enviar mensajes individuales a un contacto.
+::: warning ATENCIÓN
+En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo reconoce como parte de las propiedades, si se usa `detail` producirá un error.
+:::
 
 ### Ejemplo de llamada
 
@@ -67,8 +66,6 @@ Este recurso se utiliza para enviar mensajes individuales a un contacto.
 #### Llamada en v3
 
 > POST /messages/send_to_contact
-
-#### Respuesta en v3
 
 ``` json
 {
@@ -79,14 +76,35 @@ Este recurso se utiliza para enviar mensajes individuales a un contacto.
 }
 ```
 
+#### Respuesta en v3
+
+```json{1}
+{
+"message_id":109212,
+"id":12345,
+"short_code":"50210000290",
+"msisdn":"50212345678",
+"direction":"MT",
+"status":"SENT",
+"message":"mensaje de prueba",
+"total_recipients":1,
+"sent_from":"API_HTTP",
+"sent_count":1,
+"error_count":0,
+"total_monitors":0,
+"is_scheduled": false,
+"is_billable": true,
+"created_by":"usuario@dominio.com",
+"created_on":"2014­08­06 21:56:41",
+"type":1
+}
+```
 
 
 #### Llamada en v4
 
 
 > POST /messages/send_to_contact
-
-#### Respuesta en v4
 
 ``` json
 {
@@ -96,6 +114,30 @@ Este recurso se utiliza para enviar mensajes individuales a un contacto.
 }
 ```
 
+#### Respuesta en v4
+
+```json{1}
+{ 
+message_id: '60eb82fe4caac830e3af82b6',
+short_code: '0050230000215',
+type: 1,
+direction: 'MT',
+status: 'SENT',
+sent_from: 'API_REST',
+id: '12345',
+message: 'mensaje de prueba',
+sent_count: 1,
+error_count: 0,
+total_recipients: 1,
+msisdn: '50235148163',
+country: '502',
+is_billable: true,
+is_scheduled: false,
+created_on: '2021-07-11 17:47:10',
+created_by: 'API',
+total_monitors: 0 
+}
+```
 
 
 
@@ -103,10 +145,9 @@ Este recurso se utiliza para enviar mensajes individuales a un contacto.
 ## Enviando mensajes a etiquetas
 ****
 
-> POST /messages/send
-
-Este recurso se utiliza para enviar mensajes a los contactos de una o varias etiquetas.
-
+::: warning ATECIÓN
+En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrario ocacionará error.
+:::
 ### Ejemplo de llamada
 
 

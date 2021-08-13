@@ -1,6 +1,9 @@
 # Grupos -> Etiquetas
 
-- En el v4, los grupos fueron simplificados y ahora son llamados etiquetas
+## Consideraciones
+- Los grupos fueron simplificados y ahora son llamados etiquetas
+- No hay método para crear etiqueta vacia, ahora al contacto existente se le asigna una etiqueta
+- No hay método para editar una etiqueta
 - Se prescindieron de las siguientes propiedades:
   - short_name
   - description
@@ -10,13 +13,12 @@
 ## Listando las etiquetas
 ****
 
-> GET /tags
 
-Este recurso se utiliza para identificar las etiquetas a los que el contacto específico pertenece.
+::: warning ATENCIÓN
+La respuesta ahora trae unicamente las propiedades name y count, si se esperan otros campos podría haber incovenientes cada vez que se listen las etiquetas.
+:::
 
 ### Ejemplo de llamada
-
-
 
 #### Llamada en v3
 
@@ -62,7 +64,6 @@ Opcional se puede enviar un parámetro search para personalizar la búsqueda.
 
 ## Agregar etiqueta a contacto
 ****
-> POST /contacts/:msisdn/tag/:tag_name
 
 Este recurso se utiliza para agregar una etiqueta a un contacto, la etiqueta no debe contener espacios ni caractéres especiales.
 
@@ -113,7 +114,6 @@ Se devolverá un JSON conteniendo el objeto de tipo `Contact`
 
 ## Listando los contactos que pertenecen a una etiqueta
 ****
-> GET /tags/:tag_name/contacts
 
 Este recurso se utiliza para obtener la lista de contactos pertenecientes a un grupo detallado por el valor `:TAG_NAME`
 
@@ -180,7 +180,6 @@ Adicional puedes agregar parámetros para personalizar la salida
 
 ## Obteniendo las etiquetas a los que pertenece un Contacto
 ****
-> GET /contacts/:msisdn/tags
 
 Este recurso se utiliza para identificar las etiquetas a los que el contacto específico pertenece.
 
@@ -224,7 +223,6 @@ Este recurso se utiliza para identificar las etiquetas a los que el contacto esp
 
 ## Eliminando Etiquetas
 ****
-> DELETE /tags/:tag_name
 
 Este recurso se utiliza para eliminar una etiqueta existente detallado por el valor `:TAG_NAME`
 

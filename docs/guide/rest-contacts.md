@@ -2,10 +2,10 @@
 
 ## Obteniendo una lista de contactos
 ****
-Este recurso se utiliza para obtener la lista de contactos existentes. La consulta puede ser filtrada por nombres o estados. Si se desea buscar contactos por grupos por favor consulta la sección
 
-> GET /contacts
-
+::: warning ATENCIÓN
+En la respuesta existen ahora los campos `tags` y `profile_uid`, estos no afectarán el funcionamiento si no se toman en cuenta.
+:::
 
 ### Ejemplo de llamada
 
@@ -33,13 +33,21 @@ Este recurso se utiliza para obtener la lista de contactos existentes. La consul
 #### Respuesta en v4
 
 ``` json
-[
+[   
     {
-        "msisdn":"50212345678",
-        "first_name":"Jose",
-        "last_name":"Gomez",
-        "status": "SUBSCRIBED"
+        "msisdn": "50235200846",
+        "phone_number": "35200846",
+        "country_code": "502",
+        "first_name": "Rocael",
+        "last_name": "Guzman",
+        "full_name": "Rocael Guzman",
+        "status": "SUSCRIBED",
+        "added_from": "WEB_FORM",
+        "tags": [ "Home" ],
+        "profile_uid": "60e7d5a834224d067d9795d0",
+        "monitoring": false 
     }
+    ...
 ]
 ```
 
@@ -47,7 +55,6 @@ Este recurso se utiliza para obtener la lista de contactos existentes. La consul
 ## Obteniendo La Información de un contacto específico
 ****
 
-> GET /contacts/:msisdn
 
 Este recurso se utiliza para poder obtener un contacto ingresando como parámetro de entrada el valor de número telefónico: MSISDN. 
 
@@ -102,7 +109,6 @@ El número de teléfono deberá de incluir el código internacional de país.
 ## Creando Un Nuevo Contacto
 ****
 
-> POST /contacts/:msisdn
 
 Este recurso se utiliza para crear un nuevo contacto.
 
@@ -154,7 +160,6 @@ Se devolverá un código que indicará si la creación fue exitosa o bien si ocu
 ## Actualizando Un Contacto
 ****
 
-> PUT /contacts/:msisdn
 
 Este recurso se utiliza para actualizar un contacto.
 
@@ -203,7 +208,6 @@ Se devolverá un código que indicará si la actualización fue exitosa o bien s
 ## Eliminando Un Contacto Existente
 ****
 
-> DELETE /contacts/:msisdn
 
 Este recurso se utiliza para eliminar un contacto existente.
 
