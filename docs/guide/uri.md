@@ -1,12 +1,27 @@
-# URI
+# URL
 
-El cambio de la URI es muy importante de tomar en cuenta, puesto que ahora se estará trabajando en una plataforma distinta, por lo que se deben hacer los cambios necesarios con la nueva URI.
+El cambio de la URL es muy importante de tomar en cuenta, puesto que ahora se estará trabajando en una plataforma distinta, por lo que se deben hacer los cambios necesarios con la nueva URL.
+
+## URL API REST
+
+#### URL v3
+
+>https://.hn/api/rest/
 
 
-#### URI v3
+#### URL v4
 
-> antigua.hn
+>https://ec.tigobusiness.hn/api/rest/
 
-#### URI v4
 
-> ec.tigobusiness.hn
+
+
+## URL API HTTP
+
+#### URL V3
+
+> https://.hn/api/http/
+
+
+#### URL v4
+> https://ec.tigobusiness.hn/api/http/

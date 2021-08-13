@@ -7,3 +7,7 @@
 
 
 Solo se debe tomar en cuenta que en el parámetro groups, irán las etiquetas a las que se enviarán los mensajes
+
+::: tip
+Recordar utilizar la nueva [URL](./uri.md)
+:::
