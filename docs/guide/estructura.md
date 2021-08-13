@@ -183,7 +183,7 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 
 | Propiedad        | Tipo     | Descripción                                                                                                                                                                                                                                                               |
 | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| message_id       | numérico | Identificador único del mensaje                                                                                                                                                                                                                                           |
+| message_id       | texto | Identificador único del mensaje                                                                                                                                                                                                                                           |
 | id               | texto    | Identificador externo del mensaje enviado por el cliente. Este es el valor del parámetro id al enviar un mensaje. Puede servir como referencia cruzada para identificar los mensajes. Como dato adicional el maximo de caracteres es 40, si se excede producira un error. |
 | short_code       | texto    | Número por el cual fue enviado el mensaje                                                                                                                                                                                                                                 |
 | country          | texto    | Código internacional del país del destinatario                                                                                                                                                                                                                            |
@@ -212,26 +212,26 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 
 ```json
 {
-"message_id":109212,
-"id":1234,
-"short_code":"50210000290",
-"groups":[
-"sales",
-"tech"
-],
-"direction":"MT",
-"status":"SENT",
-"message":"demo: This is a test message",
-"total_recipients":21,
-"sent_from":"API_HTTP",
-"sent_count":24,
-"error_count":0,
-"total_monitors":3,
-"is_scheduled":false,
-"is_billable":true,
-"created_by":"usuario@dominio.com",
-"created_on":"2014­08 ­06 21:56:41",
-"type":2
+   "message_id":109212,
+   "id":1234,
+   "short_code":"50210000290",
+   "groups":[
+   "sales",
+   "tech"
+   ],
+   "direction":"MT",
+   "status":"SENT",
+   "message":"demo: This is a test message",
+   "total_recipients":21,
+   "sent_from":"API_HTTP",
+   "sent_count":24,
+   "error_count":0,
+   "total_monitors":3,
+   "is_scheduled":false,
+   "is_billable":true,
+   "created_by":"usuario@dominio.com",
+   "created_on":"2014­08 ­06 21:56:41",
+   "type":2
 }
 ```
 

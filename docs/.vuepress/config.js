@@ -68,7 +68,18 @@ module.exports = {
         {
           text: "SDK's",
           collapsable: false,
-          children: ["sdk-contacts","sdk-groups", "sdk-messages"],
+          children: ["sdk-contacts", "sdk-groups", "sdk-messages"],
+        },
+        {
+          text: "Api Http",
+          collapsable: false,
+          children: [
+            "api-individual",
+            "api-groups",
+            "api-mensajes-entrantes",
+            "api-notificacion-error",
+            "api-llamada-fallida",
+          ],
         },
       ],
     },

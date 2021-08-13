@@ -118,24 +118,24 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 
 ```json{1}
 { 
-message_id: '60eb82fe4caac830e3af82b6',
-short_code: '0050230000215',
-type: 1,
-direction: 'MT',
-status: 'SENT',
-sent_from: 'API_REST',
-id: '12345',
-message: 'mensaje de prueba',
-sent_count: 1,
-error_count: 0,
-total_recipients: 1,
-msisdn: '50235148163',
-country: '502',
-is_billable: true,
-is_scheduled: false,
-created_on: '2021-07-11 17:47:10',
-created_by: 'API',
-total_monitors: 0 
+    message_id: "60eb82fe4caac830e3af82b6",
+    short_code: "0050230000215",
+    type: 1,
+    direction: "MT",
+    status: "SENT",
+    sent_from: "API_REST",
+    id: "12345",
+    message: "mensaje de prueba",
+    sent_count: 1,
+    error_count: 0,
+    total_recipients: 1,
+    msisdn: "50235148163",
+    country: "502",
+    is_billable: true,
+    is_scheduled: false,
+    created_on: "2021-07-11 17:47:10",
+    created_by: "API",
+    total_monitors: 0 
 }
 ```
 

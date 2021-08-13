@@ -9,7 +9,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <CodeGroup>
   <CodeGroupItem title=".NET" active>
 
-``` c#
+``` cs
 string name = "Julio";
 Console.write($"Hola {name}");
 ```
