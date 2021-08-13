@@ -1,4 +1,4 @@
-# Mensajes entrantes
+# Mensajes entrantes *validar con mynor
 
 ::: warning ATENCIÓN
 Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tipo texto (antes era de tipo numérico)

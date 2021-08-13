@@ -119,7 +119,11 @@ Este recurso se utiliza para crear un nuevo contacto.
 > POST /contacts/50212345678
 
 ``` json
-{ "msisdn": "50212345678", "first_name": "Jose", "last_name":"Gomez"}
+{ 
+    "msisdn": "50212345678", 
+    "first_name": "Jose", 
+    "last_name": "Gomez"
+}
 ```
 
 #### Respuesta en v3
@@ -170,7 +174,10 @@ Este recurso se utiliza para actualizar un contacto.
 > PUT /contacts/50212345678
 
 ``` json
-{ "first_name": "Jose", "last_name": "Gomez" }
+{ 
+    "first_name": "Jose", 
+    "last_name": "Gomez" 
+}
 ```
 
 #### Respuesta en v3

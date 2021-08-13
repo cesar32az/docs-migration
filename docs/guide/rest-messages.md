@@ -78,7 +78,7 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 
 #### Respuesta en v3
 
-```json{1}
+```json{2}
 {
 "message_id":109212,
 "id":12345,
@@ -116,26 +116,26 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 
 #### Respuesta en v4
 
-```json{1}
+```json{2}
 { 
-    message_id: "60eb82fe4caac830e3af82b6",
-    short_code: "0050230000215",
-    type: 1,
-    direction: "MT",
-    status: "SENT",
-    sent_from: "API_REST",
-    id: "12345",
-    message: "mensaje de prueba",
-    sent_count: 1,
-    error_count: 0,
-    total_recipients: 1,
-    msisdn: "50235148163",
-    country: "502",
-    is_billable: true,
-    is_scheduled: false,
-    created_on: "2021-07-11 17:47:10",
-    created_by: "API",
-    total_monitors: 0 
+    "message_id": "60eb82fe4caac830e3af82b6",
+    "short_code": "0050230000215",
+    "type": 1,
+    "direction": "MT",
+    "status": "SENT",
+    "sent_from": "API_REST",
+    "id": "12345",
+    "message": "mensaje de prueba",
+    "sent_count": 1,
+    "error_count": 0,
+    "total_recipients": 1,
+    "msisdn": "50235148163",
+    "country": "502",
+    "is_billable": true,
+    "is_scheduled": false,
+    "created_on": "2021-07-11 17:47:10",
+    "created_by": "API",
+    "total_monitors": 0 
 }
 ```
 
@@ -150,13 +150,9 @@ En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrari
 :::
 ### Ejemplo de llamada
 
-
-
 #### Llamada en v3
 
 > POST /messages/send
-
-#### Respuesta en v3
 
 ``` json
 {
@@ -166,13 +162,14 @@ En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrari
 }
 ```
 
+#### Respuesta en v3
+
+
 
 #### Llamada en v4
 
 
 > POST /messages/send
-
-#### Respuesta en v4
 
 ``` json{2}
 {
@@ -181,6 +178,31 @@ En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrari
    "id": 1
 }
 ```
+#### Respuesta en v4
+
+```json
+{
+   "message_id": "60eb82fe4caac830e3af82b6",
+   "short_code": "0050230000215",
+   "type": 1,
+   "direction": "MT",
+   "status": "READY",
+   "sent_from": "API_REST",
+   "id": "12345",
+   "message": "este es un mensaje de prueba",
+   "sent_count": 0,
+   "error_count": 0,
+   "total_recipients": 1,
+   "msisdn": "50235148163",
+   "country": "502",
+   "is_billable": true,
+   "is_scheduled": false,
+   "created_on": "2021-07-11 17:47:10",
+   "created_by": "API",
+   "total_monitors": 0
+}
+```
+
 
 ::: warning ATENCIÓN
 La propiedad "groups" es cambiada a "tags"

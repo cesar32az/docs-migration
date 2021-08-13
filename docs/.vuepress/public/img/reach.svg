@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.41670229"
-     inkscape:cx="1303.6815"
+     inkscape:cx="830.92192"
      inkscape:cy="363.05019"
      inkscape:document-units="mm"
      inkscape:current-layer="Capa_1-2-5-1"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,10 +58,10 @@
        id="Capa_1-2-5-1"
        transform="matrix(11.489946,-0.06521036,0.07119391,10.580822,-454.6526,9.8565941)">
       <path
-         style="fill:#f2f2f2;fill-opacity:1;stroke:#29272d;stroke-width:0.36244261;stroke-miterlimit:8.80000019;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#f2f2f2;fill-opacity:1;stroke:#29272d;stroke-width:0.77438843;stroke-miterlimit:8.80000019;stroke-dasharray:none;stroke-opacity:1"
          inkscape:connector-curvature="0"
          id="path10-2-7"
-         d="m 48.498447,-0.00204338 -8.63,26.77999938 12.67,-5.08 4.49,5.08 z m -4.12,21.75999938 4.12,-13.4399994 3.17,10.2399994 z"
+         d="M 48.210359,0.77222857 40.310651,26.039454 52.399824,21.067081 56.782732,25.760524 Z M 44.567808,21.256015 48.329762,8.5786593 51.519639,18.135046 Z"
          class="cls-1" />
     </g>
   </g>
