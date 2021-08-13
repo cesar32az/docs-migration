@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  frontend:
+    container_name: docs-migration
+    restart: always
+    build: .
+    ports:
+      - 80:8080
+    volumes:
+      - .:/usr/src/app
+      
