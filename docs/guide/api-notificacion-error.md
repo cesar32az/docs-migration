@@ -1,7 +1,7 @@
 # Notificación de errores
 
 
-#### no hay ningún cambio
+#### No hay ningún cambio
 
 ```json
 {   

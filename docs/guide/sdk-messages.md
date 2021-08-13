@@ -22,6 +22,15 @@ $response = $api->messages()->getMessages("2015-03-01", "2015-03-10");
 ```
 
   </CodeGroupItem>
+
+  <CodeGroupItem title="Java">
+
+```java
+ApiResponse<List<MessageJson>> response = 
+        messagesApi.getList(startDate, endDate, start, limit, msisdn, direction);
+```   
+  </CodeGroupItem>
+
 </CodeGroup>
 
 ## Messages.SendToContact
@@ -43,6 +52,17 @@ ResponseObjects.ApiResponse<ResponseObjects.MessageResponse> response =
 $response = $api->messages()->sendToContact("50212345678", "Sent from PHP SDK", "123");
 ```
 
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Java">
+  
+```java
+ApiResponse<MessageJson> response = messagesApi.sendToContact(
+      "50252010101", 
+      testMessage, 
+      messageId
+);
+```
   </CodeGroupItem>
 </CodeGroup>
 
@@ -66,5 +86,16 @@ ResponseObjects.ApiResponse<ResponseObjects.MessageResponse> response =
 $response = $api->messages()->sendToTag(array("test"), "Test message to tag", "12434");
 ```
 
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Java">
+  
+```java
+ApiResponse<MessageJson> response = messagesApi.sendToGroups(
+      new String[]{"vip", "deportes"},
+      testMessage,
+      messageId
+);
+```
   </CodeGroupItem>
 </CodeGroup>

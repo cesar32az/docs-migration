@@ -1,4 +1,4 @@
-# Grupos -> Etiquetas
+# Grupos ➜ Etiquetas
 
 ## Consideraciones
 - Los grupos fueron simplificados y ahora son llamados etiquetas

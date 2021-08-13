@@ -4,6 +4,10 @@
 Al objeto Contacto se le agregó la propiedad tags
 :::
 
+Ahora se cuenta con nuevos métodos para agregar y eliminar las etiquetas de los contactos
+- [Contacts.addTag](#contacts-addtag)
+- [Contacts.deleteTag](#contacts-removetag)
+
 ## Contacts.GetList
 #### No presenta ningún cambio en la llamada a esta función
 
@@ -21,6 +25,13 @@ ResponseObjects.ApiResponse<List<ResponseObjects.ContactJson>> response =
 $response = $api->contacts()->getContacts(null,10,0,'SUSCRIBED');
 ```
   </CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+ApiResponse<List<ContactJsonObject>> response =
+      contactsApi.getList(null, null, 0, 1, false);
+```
+</CodeGroupItem>
 </CodeGroup>
 
 ## Contacts.GetByMsisdn
@@ -37,10 +48,17 @@ ResponseObjects.ApiResponse<ResponseObjects.ContactJson> response =
   <CodeGroupItem title="PHP">
 
 ```php
-$response = $api->contacts()->getContacts($msisdn,10,0,'SUSCRIBED');
+$response = $api->contacts()->getContacts($msisdn);
 
 ```
   </CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+ApiResponse<ContactJsonObject> response =
+      contactsApi.getByMsisdn(msisdn);
+```
+</CodeGroupItem>
 </CodeGroup>
 
 ## Contacts.Update
@@ -60,6 +78,17 @@ ResponseObjects.ApiResponse<ResponseObjects.ContactJson> response =
 $response = $api->contacts()->updateContact("50212345678","12345678","502","Alberto");
 ```
   </CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+contactsApi.update(
+    testContactCountryCode,
+    testContactMsisdn,
+    testContactLastName,
+    testContactFirstName
+);
+```
+</CodeGroupItem>
 </CodeGroup>
 
 ## Contacts.Add
@@ -79,6 +108,17 @@ ResponseObjects.ApiResponse<ResponseObjects.ContactJson> response =
 $response = $api->contacts()->createContact("59824","502",'prueba', $firstName, $lastName);
 ```
   </CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+ApiResponse<ContactJsonObject> response = contactsApi.add(
+      testContactCountryCode,
+      testContactMsisdn,
+      testContactFirstName,
+      testContactLastName
+);
+```
+</CodeGroupItem>
 </CodeGroup>
 
 ## Contacts.Delete
@@ -98,6 +138,12 @@ ResponseObjects.ApiResponse<ResponseObjects.ContactJson> response =
 $response = $api->contacts()->deleteContact("50253919824");
 ```
   </CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+contactsApi.delete(testContactMsisdn);
+```
+</CodeGroupItem>
 </CodeGroup>
 
 ## Contacts.GetGroupList
@@ -117,4 +163,63 @@ ResponseObjects.ApiResponse<List<ResponseObjects.GroupResponse>> response =
 $response = $api->contacts()->getContactGroups("50212345678");
 ```
   </CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+ApiResponse<List<TagJsonObject>> tags = contactsApi.getTagList(testContactMsisdn);
+```
+</CodeGroupItem>
+</CodeGroup>
+
+## Contacts.addTag
+
+Al usar estas funciones, únicamente se debe tomar en cuenta los parámetros de msisdn que pertenece al contacto al cual se le agregara la etiqueta y el nombre de la etiqueta
+
+<CodeGroup>
+
+<CodeGroupItem title=".NET">
+
+```cs
+```
+</CodeGroupItem>
+<CodeGroupItem title="PHP" active>
+
+```php
+$response = $api->contacts()->addTagToContact('50212345678', "tagTest");
+```
+</CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+ApiResponse<ContactJsonObject> addResponse = 
+      contactsApi.addTag(testContactMsisdn, testTagName);
+```
+</CodeGroupItem>
+</CodeGroup>
+
+
+## Contacts.removeTag
+
+
+
+<CodeGroup>
+
+<CodeGroupItem title=".NET">
+
+```cs
+```
+</CodeGroupItem>
+<CodeGroupItem title="PHP" active>
+
+```php
+$response = $api->contacts()->removeTagToContact('50230593400', "test");
+```
+</CodeGroupItem>
+<CodeGroupItem title="Java">
+
+```java
+ApiResponse<ContactJsonObject> addResponse = 
+      contactsApi.removeTag(testContactMsisdn, testTagName);
+```
+</CodeGroupItem>
 </CodeGroup>

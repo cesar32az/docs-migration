@@ -1,4 +1,4 @@
-# Grupos -> Etiquetas
+# Grupos ➜ Etiquetas
 
 ::: warning ATENCIÓN
 En cualquier respuesta de tipo GroupResponse
@@ -23,6 +23,13 @@ ResponseObjects.ApiResponse<List<ResponseObjects.GroupResponse>> response =
 $tags = $api->tags()->getTags();
 ```
   </CodeGroupItem>
+
+  <CodeGroupItem title="Java">
+
+```java
+ApiResponse<List<TagJsonObject>> tags = tagsApi.getList();
+```
+  </CodeGroupItem>
 </CodeGroup>
 
 
@@ -41,6 +48,12 @@ ResponseObjects.ApiResponse<ResponseObjects.GroupResponse> response =
 
 ```php
 $tag = $api->tags()->getByShortName("test");
+```
+  </CodeGroupItem>
+  <CodeGroupItem title="Java">
+
+```java
+ApiResponse<TagJsonObject> tag = tagsApi.getTag(testTagName);
 ```
   </CodeGroupItem>
 </CodeGroup>
@@ -62,6 +75,12 @@ ResponseObjects.ApiResponse<ResponseObjects.ActionMessageResponse> response =
 $response = $api->tags()->deleteTag("newTag");
 ```
   </CodeGroupItem>
+  <CodeGroupItem title="Java">
+
+```java
+ApiResponse<TagJsonObject> tag = tagsApi.deleteTag(testTagName);
+```
+  </CodeGroupItem>
 </CodeGroup>
 
 ## Groups.GetContactList
@@ -79,6 +98,12 @@ ResponseObjects.ApiResponse<List<ResponseObjects.ContactJson>> response =
 
 ```php
 $response = $api->tags()->getTagContacts("tag");
+```
+  </CodeGroupItem>
+  <CodeGroupItem title="Java">
+
+```java
+ApiResponse<List<ContactJsonObject>> tag = tagsApi.getContactList(tagName);
 ```
   </CodeGroupItem>
 </CodeGroup>
