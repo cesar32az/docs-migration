@@ -66,11 +66,6 @@ module.exports = {
           children: ["rest-contacts", "rest-group-tag", "rest-messages"],
         },
         {
-          text: "SDK's",
-          collapsable: false,
-          children: ["sdk-contacts", "sdk-groups", "sdk-messages"],
-        },
-        {
           text: "Api Http",
           collapsable: false,
           children: [
@@ -80,6 +75,11 @@ module.exports = {
             "api-notificacion-error",
             "api-llamada-fallida",
           ],
+        },
+        {
+          text: "SDK's",
+          collapsable: false,
+          children: ["sdk-contacts", "sdk-groups", "sdk-messages"],
         },
       ],
     },

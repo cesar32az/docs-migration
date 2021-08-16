@@ -1,18 +1,18 @@
 # Mensajes entrantes *validar con mynor
 
-::: warning ATENCIÓN
+<!-- ::: warning ATENCIÓN
 Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tipo texto (antes era de tipo numérico)
-:::
+::: -->
 
 #### v3
 
 ```json
 {
-   "datetime":"2021-07-12 00:00:11",
+   "datetime":"2021-08-16 22:34:46",
    "message":"texto prueba",
    "message_id":460808216,
-   "msisdn":"50235148164",
-   "short_number":"50210001234",
+   "msisdn":"50212345678",
+   "short_number":"50287654321",
    "type":"INBOX",
    "status":"FORWARDED"
 }
@@ -22,12 +22,11 @@ Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tip
 
 ```json
 {
-   "datetime": "2021-07-12 00:00:11",
-   "message": "texto prueba",
-   "message_id": "60eb82fe4caac830e3af82b6",
-   "msisdn": "50235148164",
-   "short_number": "50210001234",
-   "type": "INBOX",
-   "status": "FORWARDED"
+  "datetime": "2021-08-12 23:46:42",
+  "message": "Test message",
+  "msisdn": "50487654321",
+  "short_number": "50412345678",
+  "type": "INBOX",
+  "status": "FORWARDED"
 }
 ```

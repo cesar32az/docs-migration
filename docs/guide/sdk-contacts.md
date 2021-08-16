@@ -8,6 +8,8 @@ Ahora se cuenta con nuevos métodos para agregar y eliminar las etiquetas de los
 - [Contacts.addTag](#contacts-addtag)
 - [Contacts.deleteTag](#contacts-removetag)
 
+Al usar estas funciones, únicamente se debe tomar en cuenta los parámetros de msisdn que pertenece al contacto al cual se le agregará o removerá la etiqueta y el nombre de la etiqueta
+
 ## Contacts.GetList
 #### No presenta ningún cambio en la llamada a esta función
 
@@ -173,7 +175,6 @@ ApiResponse<List<TagJsonObject>> tags = contactsApi.getTagList(testContactMsisdn
 
 ## Contacts.addTag
 
-Al usar estas funciones, únicamente se debe tomar en cuenta los parámetros de msisdn que pertenece al contacto al cual se le agregara la etiqueta y el nombre de la etiqueta
 
 <CodeGroup>
 
