@@ -1,4 +1,4 @@
-FROM node:14-slim
+FROM node:14-slim as build
 
 WORKDIR /usr/src/app
 
@@ -10,6 +10,11 @@ RUN npm install
 # copy project
 COPY . .
 
-EXPOSE 8000
+RUN npm run build
 
-CMD ["npm", "run", "dev"]
+
+FROM nginx
+
+COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+
+COPY --from=build /usr/src/app/docs/.vuepress/dist /usr/share/nginx/html
