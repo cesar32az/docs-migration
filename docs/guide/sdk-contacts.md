@@ -177,12 +177,14 @@ Al usar estas funciones, únicamente se debe tomar en cuenta los parámetros de 
 
 <CodeGroup>
 
-<CodeGroupItem title=".NET">
+<CodeGroupItem title=".NET" active>
 
 ```cs
+ResponseObjects.ApiResponse<ResponseObjects.ContactJson> response = 
+      sdk.Contacts.AddTag(msisdn, tagName);
 ```
 </CodeGroupItem>
-<CodeGroupItem title="PHP" active>
+<CodeGroupItem title="PHP">
 
 ```php
 $response = $api->contacts()->addTagToContact('50212345678', "tagTest");
@@ -204,12 +206,15 @@ ApiResponse<ContactJsonObject> addResponse =
 
 <CodeGroup>
 
-<CodeGroupItem title=".NET">
+<CodeGroupItem title=".NET" active>
 
 ```cs
+ResponseObjects.ApiResponse<ResponseObjects.ContactJson> response = 
+      sdk.Contacts.RemoveTag(msisdn, tagName);
+
 ```
 </CodeGroupItem>
-<CodeGroupItem title="PHP" active>
+<CodeGroupItem title="PHP">
 
 ```php
 $response = $api->contacts()->removeTagToContact('50230593400', "test");
