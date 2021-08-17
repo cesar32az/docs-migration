@@ -1,4 +1,4 @@
-# Mensajes entrantes *validar con mynor
+# Mensajes entrantes
 
 <!-- ::: warning ATENCIÓN
 Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tipo texto (antes era de tipo numérico)
@@ -30,3 +30,7 @@ Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tip
   "status": "FORWARDED"
 }
 ```
+
+::: warning ATENCIÓN
+La propiedad `message_id` ya no está presente en la v4
+:::

@@ -24,6 +24,9 @@
 | name      | texto    | Nombre de la etiqueta             |
 | count     | numérico | Total de contactos en la etiqueta |
 
+::: tip
+Se agregó la propiedad count
+:::
 
 ### Ejemplos del JSON
 

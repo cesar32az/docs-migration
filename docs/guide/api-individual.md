@@ -7,5 +7,5 @@
 
 
 ::: tip
-Recordar utilizar la nueva [URL](./uri.md)
+Recordar utilizar la nueva [URL](./uri.md) https://ec.tigobusiness.hn/api/http/
 :::

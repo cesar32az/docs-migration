@@ -59,7 +59,7 @@ En la respuesta existen ahora los campos `tags` y `profile_uid`, estos no afecta
 Este recurso se utiliza para poder obtener un contacto ingresando como parámetro de entrada el valor de número telefónico: MSISDN. 
 
 
-::: danger
+::: danger ADVERTENCIA
 El número de teléfono deberá de incluir el código internacional de país.
 :::
 

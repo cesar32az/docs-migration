@@ -1,8 +1,8 @@
 const { description } = require("../../package");
-const { path } = require('@vuepress/utils')
+const { path } = require("@vuepress/utils");
 
 module.exports = {
-  clientAppEnhanceFiles: path.resolve(__dirname, './enhanceApp.js'),
+  clientAppEnhanceFiles: path.resolve(__dirname, "./enhanceApp.js"),
   title: "Reach",
   description: description,
   head: [
@@ -37,6 +37,14 @@ module.exports = {
       {
         text: "Guía",
         link: "/guide/",
+      },
+      /* {
+        text: "Tutoriales",
+        link: "/tutorial/",
+      }, */
+      {
+        text: "Contacto Soporte",
+        link: "/contacto/",
       },
       {
         text: "Enterprise Communicator",
@@ -76,15 +84,29 @@ module.exports = {
           children: ["sdk-contacts", "sdk-groups", "sdk-messages"],
         },
       ],
+      "/tutorial/": [
+        {
+          text: "tutoriales",
+          collapsable: false,
+          children: ["README.md"],
+        },
+      ],
+      "/contacto/": [
+        {
+          text: "Contacto Soporte",
+          collapsable: true,
+          children: [''],
+        },
+      ],
     },
   },
   plugins: [
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     "@vuepress/plugin-search",
-    '@vuepress/register-components',
+    "@vuepress/register-components",
     {
-      componentsDir: path.resolve(__dirname, './components'),
+      componentsDir: path.resolve(__dirname, "./components"),
       maxSuggestions: 10,
       locales: {
         "/": {
