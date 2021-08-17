@@ -86,16 +86,16 @@ module.exports = {
       ],
       "/tutorial/": [
         {
-          text: "tutoriales",
+          text: "Manual WEB",
           collapsable: false,
-          children: ["README.md"],
+          children: ["README.md","contactos", "mensajeria", "reportes"],
         },
       ],
       "/contacto/": [
         {
           text: "Contacto Soporte",
           collapsable: true,
-          children: [''],
+          children: ['README.md'],
         },
       ],
     },

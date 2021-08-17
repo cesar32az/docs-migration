@@ -1,21 +1,28 @@
-<center>
-
-# Contáctanos
-</center>
+<h1 class="center">
+Contáctanos
+</h1>
 
 ****
 
 Para nosotros es importate brindarte la mejor atención, por lo que si tienes alguna duda con la plataforma, puedes contactarnos y con mucho gusto te apoyaremos.  
 
 
+<div class="center content">
 
-<center>
+#### [Tel: (+502) 5575-0567]()
 
-#### Tel: (+502) 2352-3523
-
-#### <a href="https://api.whatsapp.com/send?phone=50231241024" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+#### <a href="https://api.whatsapp.com/send?phone=50255750567" target="_blank" rel="noopener noreferrer">Whatsapp</a>
 
 
-#### <a href="mailto:soporte.tigo@interactuamovil.com" target="_blank" rel="noopener noreferrer">soporte.tigo@interactuamovil.com</a>
+#### <a href="mailto:soporte.tigo@ubiquo.io" target="_blank" rel="noopener noreferrer">soporte.tigo@ubiquo.io</a>
 
-</center>
+</div>
+
+<style>
+    .center{
+        text-align: center;
+    }
+    .content{
+        margin: 8rem 0rem
+    }
+</style>
