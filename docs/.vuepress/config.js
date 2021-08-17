@@ -1,9 +1,12 @@
 const { description } = require("../../package");
+const { path } = require('@vuepress/utils')
 
 module.exports = {
+  clientAppEnhanceFiles: path.resolve(__dirname, './enhanceApp.js'),
   title: "Reach",
   description: description,
   head: [
+    ["link", { rel: "icon", href: "img/reach.svg" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
@@ -36,21 +39,12 @@ module.exports = {
         link: "/guide/",
       },
       {
-        text: "Reach",
+        text: "Enterprise Communicator",
         link: "https://ec.tigobusiness.hn/",
       },
       {
-        text: "Docs",
-        children: [
-          {
-            text: "Docs v3",
-            link: "https://notificame.claro.com.gt/api/docs/",
-          },
-          {
-            text: "Docs v4",
-            link: "https://docs.reach.tools/manual-tecnico/#page-content",
-          },
-        ],
+        text: "Docs v4",
+        link: "https://docs.reach.tools/manual-tecnico/#page-content",
       },
     ],
     sidebar: {
@@ -88,7 +82,9 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     "@vuepress/plugin-search",
+    '@vuepress/register-components',
     {
+      componentsDir: path.resolve(__dirname, './components'),
       maxSuggestions: 10,
       locales: {
         "/": {

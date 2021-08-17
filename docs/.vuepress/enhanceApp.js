@@ -1,8 +1,6 @@
-export default ({
-  Vue, // the version of Vue being used in the VuePress app
-  options, // the options for the root Vue instance
-  router, // the router instance for the app
-  siteData // site metadata
-}) => {
-  // ...apply enhancements for the site.
-}
+import { defineClientAppEnhance } from '@vuepress/client'
+import Features from './components/Features.vue'
+
+export default defineClientAppEnhance(({ app, router, siteData }) => {
+  app.component('Features', Features)
+})
