@@ -4,7 +4,7 @@
 Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tipo texto (antes era de tipo numérico)
 ::: -->
 
-#### v3
+#### Mensajería Corporativa
 
 ```json
 {
@@ -18,7 +18,7 @@ Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tip
 }
 ```
 
-#### v4
+#### Enterprise Communicator
 
 ```json
 {
@@ -32,5 +32,5 @@ Ahora el json de los mensajes entrantes, la propiedad `message_id` cambió a tip
 ```
 
 ::: warning ATENCIÓN
-La propiedad `message_id` ya no está presente en la v4
+La propiedad `message_id` ya no está presente en la versión de Enterprise Communicator
 :::

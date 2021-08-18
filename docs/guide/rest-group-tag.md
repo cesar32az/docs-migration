@@ -20,11 +20,11 @@ La respuesta ahora trae unicamente las propiedades name y count, si se esperan o
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > GET /groups
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ``` json
 [
@@ -38,7 +38,7 @@ La respuesta ahora trae unicamente las propiedades name y count, si se esperan o
 ```
 
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > GET /tags
 
@@ -48,7 +48,7 @@ Opcional se puede enviar un parámetro search para personalizar la búsqueda.
 > GET /tags?search=Sport
 :::
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 [ 
@@ -69,21 +69,21 @@ Este recurso se utiliza para agregar una etiqueta a un contacto, la etiqueta no 
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > POST /groups/:short_name/contacts/:msisdn
 
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 Se devolverá un código que indicará si la adición del contacto fue exitosa o si ocurrió un error al ejecutar la operación. Por favor consultar la tabla de códigos de respuesta de la plataforma.
 
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > POST /contacts/50235148164/tag/newTag
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 Se devolverá un JSON conteniendo el objeto de tipo `Contact`
 
@@ -120,11 +120,11 @@ Este recurso se utiliza para obtener la lista de contactos pertenecientes a un g
 ### Ejemplo de llamada
 
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > GET /groups/sales/contacts
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ``` json
 [
@@ -145,7 +145,7 @@ Este recurso se utiliza para obtener la lista de contactos pertenecientes a un g
 ]
 ```
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > GET /tags/vip/contacts
 
@@ -154,7 +154,7 @@ Adicional puedes agregar parámetros para personalizar la salida
 > GET /tags/vip/contacts?limit=1&start=0
 :::
 
-#### Respuesta en v4 
+#### Respuesta en Enterprise Communicator 
 
 ``` json{11}
 [
@@ -185,11 +185,11 @@ Este recurso se utiliza para identificar las etiquetas a los que el contacto esp
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > GET /contacts/50212345678/groups
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ``` json
 [
@@ -204,11 +204,11 @@ Este recurso se utiliza para identificar las etiquetas a los que el contacto esp
 ```
 
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > GET /contacts/50235148164/tags
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 [ 
@@ -229,18 +229,18 @@ Este recurso se utiliza para eliminar una etiqueta existente detallado por el va
 ### Ejemplo de llamada
 
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > DELETE /groups/vip
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 Se devolverá un código que indicará si la eliminación fue exitosa o si ocurrió un error al ejecutar la operación. Por favor consultar la tabla de códigos de respuesta de la plataforma.
 
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > DELETE /tags/vip
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 Se devolverá un código que indicará si la eliminación fue exitosa o si ocurrió un error al ejecutar la operación. Por favor consultar la tabla de códigos de respuesta de la plataforma.

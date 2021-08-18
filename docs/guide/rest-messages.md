@@ -9,11 +9,11 @@ Este recurso se utiliza para obtener el listado de los mensajes enviados.
 ### Ejemplo de llamada
 
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > GET /messages
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ``` json
 [
@@ -34,11 +34,11 @@ Este recurso se utiliza para obtener el listado de los mensajes enviados.
 
 ```
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > GET /messages
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 [
@@ -63,7 +63,7 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 ### Ejemplo de llamada
 
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > POST /messages/send_to_contact
 
@@ -76,7 +76,7 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 }
 ```
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ```json{2}
 {
@@ -101,7 +101,7 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 ```
 
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 
 > POST /messages/send_to_contact
@@ -114,7 +114,7 @@ En la solicitud, ya no se puede usar la llave `detail`, el API-REST no lo recono
 }
 ```
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ```json{2}
 { 
@@ -150,7 +150,7 @@ En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrari
 :::
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > POST /messages/send
 
@@ -162,11 +162,11 @@ En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrari
 }
 ```
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 
 > POST /messages/send
@@ -178,7 +178,7 @@ En la solicitud, la llave `groups`, ahora es cambiada a `tags`, en caso contrari
    "id": 1
 }
 ```
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ```json
 {

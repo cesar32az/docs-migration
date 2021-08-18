@@ -1,11 +1,11 @@
 ---
 home: true
 heroImage: img/reach.svg
-tagline: Migración v3 a v4
+tagline: Migración de Mensajería Corporativa a Enterprise Communicator
 actions:
-  - text: Manual WEB
-    link: /tutorial/
-    type: primary
+  # - text: Manual WEB
+  #   link: /tutorial/
+  #   type: primary
   - text: Documentación API
     link: /guide/
     type: secondary

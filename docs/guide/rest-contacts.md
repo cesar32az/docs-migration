@@ -9,11 +9,11 @@ En la respuesta existen ahora los campos `tags` y `profile_uid`, estos no afecta
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > GET /contacts
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ``` json
 [
@@ -26,11 +26,11 @@ En la respuesta existen ahora los campos `tags` y `profile_uid`, estos no afecta
 ]
 ```
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > GET /contacts
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 [   
@@ -67,11 +67,11 @@ El número de teléfono deberá de incluir el código internacional de país.
 ### Ejemplo de llamada
 
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > GET /contacts/50212345678
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 ``` json
 {
@@ -82,11 +82,11 @@ El número de teléfono deberá de incluir el código internacional de país.
 }
 ```
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > GET /contacts/50212345678
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 {
@@ -114,7 +114,7 @@ Este recurso se utiliza para crear un nuevo contacto.
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > POST /contacts/50212345678
 
@@ -126,11 +126,11 @@ Este recurso se utiliza para crear un nuevo contacto.
 }
 ```
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 Se devolverá un código que indicará si la creación fue exitosa o bien si ocurrió un error al efectuar la operación. Por favor consultar la [Tabla de códigos](https://notificame.claro.com.gt/api/docs/index.php/codigos-de-retorno/) de respuesta de la plataforma.
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > POST /contacts/50235148164
 
@@ -142,7 +142,7 @@ Se devolverá un código que indicará si la creación fue exitosa o bien si ocu
    "msisdn": "50235148164"
 }
 ```
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 {
@@ -169,7 +169,7 @@ Este recurso se utiliza para actualizar un contacto.
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > PUT /contacts/50212345678
 
@@ -180,11 +180,11 @@ Este recurso se utiliza para actualizar un contacto.
 }
 ```
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 Se devolverá un código que indicará si la actualización fue exitosa o bien si ocurrió un error al efectuar la operación. Por favor consultar la [Tabla de códigos](https://notificame.claro.com.gt/api/docs/index.php/codigos-de-retorno/) de respuesta de la plataforma.
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > PUT /contacts/50235148164
 
@@ -194,7 +194,7 @@ Se devolverá un código que indicará si la actualización fue exitosa o bien s
    "last_name": "Gomez",
 }
 ```
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 ``` json
 {
@@ -220,19 +220,19 @@ Este recurso se utiliza para eliminar un contacto existente.
 
 ### Ejemplo de llamada
 
-#### Llamada en v3
+#### Llamada en Mensajería Corporativa
 
 > DELETE /contacts/50212345678
 
-#### Respuesta en v3
+#### Respuesta en Mensajería Corporativa
 
 Se devolverá un código que indicará si la eliminación fue exitosa o bien si ocurrió un error al efectuar la operación. Por favor consultar la [Tabla de códigos](https://notificame.claro.com.gt/api/docs/index.php/codigos-de-retorno/) de respuesta de la plataforma.
 
-#### Llamada en v4
+#### Llamada en Enterprise Communicator
 
 > DELETE /contacts/50212345678
 
-#### Respuesta en v4
+#### Respuesta en Enterprise Communicator
 
 Se devolverá un código que indicará si la eliminación fue exitosa o bien si ocurrió un error al ejecutar la operación. Por favor consultar la [Tabla de códigos](https://docs.reach.tools/manual/tabla-codigos-de-respuesta/#page-content) de respuesta de la plataforma.
 

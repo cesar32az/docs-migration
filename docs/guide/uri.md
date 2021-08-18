@@ -4,24 +4,23 @@ El cambio de la URL es muy importante de tomar en cuenta, puesto que ahora se es
 
 ## URL API REST
 
-#### URL v3
+#### URL Mensajería Corporativa
 
->https://.hn/api/rest/
+>https://mensajeriacorporativa.tigobusiness.hn/
 
 
-#### URL v4
+#### URL Enterprise Communicator
 
 >https://ec.tigobusiness.hn/api/rest/
 
 
 
-
 ## URL API HTTP
 
-#### URL V3
+#### URL Mensajería Corporativa
 
-> https://.hn/api/http/
+>https://mensajeriacorporativa.tigobusiness.hn/
 
 
-#### URL v4
+#### URL Enterprise Communicator
 > https://ec.tigobusiness.hn/api/http/

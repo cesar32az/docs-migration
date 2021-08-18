@@ -3,7 +3,7 @@
 ## Objeto Grupo ➜ Etiquetas
 
 
-### Propiedades de Grupo v3
+### Propiedades de Grupo en Mensajería Corporativa
 
 
 | Propiedad   | Tipo   |           |
@@ -16,7 +16,7 @@
 
 
 
-### Propiedades de Etiqueta v4
+### Propiedades de Etiqueta en Enterprise Communicator
 
 
 | Propiedad | Tipo     | Descripción                       |
@@ -32,7 +32,7 @@ Se agregó la propiedad count
 
 
 
-#### Json de Grupo v3
+#### Json de Grupo en Mensajería Corporativa
 
 
 ```json
@@ -52,7 +52,7 @@ Se agregó la propiedad count
 
 
 
-#### Json de Etiqueta v4
+#### Json de Etiqueta en Enterprise Communicator
 
 
 ```json
@@ -67,7 +67,7 @@ Se agregó la propiedad count
 
 
 
-### Propiedades de Contactos v3
+### Propiedades de Contactos en Mensajería Corporativa
 
 
 | Propiedad    | Tipo  |
@@ -85,7 +85,7 @@ Se agregó la propiedad count
 
 
 
-### Propiedades de Contactos v4
+### Propiedades de Contactos en Enterprise Communicator
 
 
 | Propiedad    | Tipo         | Descripción                                                                                 |
@@ -104,7 +104,7 @@ Se agregó la propiedad count
 
 
 
-#### Json de Contacto v3
+#### Json de Contacto en Mensajería Corporativa
 
 
 ```json
@@ -122,7 +122,7 @@ Se agregó la propiedad count
 
 
 
-#### Json de Contacto v4
+#### Json de Contacto en Enterprise Communicator
 
 
 ```json
@@ -151,7 +151,7 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 
 
 
-### Propiedades de Mensajes v3
+### Propiedades de Mensajes en Mensajería Corporativa
 
 
 | Propiedad        | Tipo     |
@@ -180,7 +180,7 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 
 
 
-### Propiedades de Mensajes v4
+### Propiedades de Mensajes en Enterprise Communicator
 
 
 
@@ -210,7 +210,7 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 
 
 
-#### Json de Mensajes v3
+#### Json de Mensajes en Mensajería Corporativa
 
 
 ```json
@@ -240,7 +240,7 @@ Se agregó la propiedad tags, donde se listan las etiquetas agregadas al contact
 
 
 
-#### Json de Mensajes v4
+#### Json de Mensajes en Enterprise Communicator
 
 
 ```json
