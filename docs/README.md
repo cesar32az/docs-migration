@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: img/reach.svg
+heroImage: img/reach-new.png
 tagline: Migración de Mensajería Corporativa a Enterprise Communicator
 actions:
   - text: Manual WEB
