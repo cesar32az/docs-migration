@@ -3,34 +3,23 @@
 ## Agregar contactos individual
 
 
-<iframe 
-width="560" 
-height="315" 
-src="https://www.youtube.com/embed/bTqVqk7FSmY" 
-frameborder="0" 
-allow="autoplay; encrypted-media" 
-allowfullscreen
-class="video"
->
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b5uDYaJWyfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Agregar contactos por archivo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XuIW9e-WBDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## sub 2
+## Administrar contactos
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_83pJih350Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe 
-width="560" 
-height="315" 
-src="https://www.youtube.com/embed/bTqVqk7FSmY" 
-frameborder="0" 
-allow="autoplay; encrypted-media" 
-allowfullscreen
-class="video"
->
-</iframe>
+## Listado de etiquetas
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g4yH8geXh8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <style>
-    .video{
-        margin-top: 1rem;
+    iframe{
+        margin-top: 2rem;
     }
-</style>
+</style>s

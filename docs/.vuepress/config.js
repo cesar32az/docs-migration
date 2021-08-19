@@ -6,7 +6,7 @@ module.exports = {
   title: "Reach",
   description: description,
   head: [
-    ["link", { rel: "icon", href: "img/reach.svg" }],
+    ["link", { rel: "icon", href: "/img/reach.svg" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
@@ -38,10 +38,10 @@ module.exports = {
         text: "Guía",
         link: "/guide/",
       },
-      /* {
+      {
         text: "Tutoriales",
         link: "/tutorial/",
-      }, */
+      },
       {
         text: "Contacto Soporte",
         link: "/contacto/",
@@ -87,15 +87,21 @@ module.exports = {
       "/tutorial/": [
         {
           text: "Manual WEB",
-          collapsable: false,
-          children: ["README.md","contactos", "mensajeria", "reportes"],
+          children: [
+            "README.md",
+            "contactos",
+            "mensajeria",
+            "links",
+            "reportes",
+            "usuarios",
+          ],
         },
       ],
       "/contacto/": [
         {
           text: "Contacto Soporte",
           collapsable: true,
-          children: ['README.md'],
+          children: ["README.md"],
         },
       ],
     },
