@@ -16,7 +16,7 @@ module.exports = {
   ],
   themeConfig: {
     darkMode: true,
-    logo: "img/reach.svg",
+    logo: "img/reach-completo.svg",
     sidebarDepth: 1,
     repo: "",
     editLinks: false,

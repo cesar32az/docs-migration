@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 2000 800.00002"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="reach-completo.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   width="2000"
+   height="800">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>RCHRecurso 4</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="0.29808269"
+     inkscape:cx="640.48907"
+     inkscape:cy="309.24382"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg22" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#0b0044;}</style>
+  </defs>
+  <title
+     id="title6">RCHRecurso 4</title>
+  <g
+     id="Capa_2"
+     data-name="Capa 2"
+     style="stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     transform="matrix(11.583139,0,0,12.927249,28.872642,110.95104)">
+    <g
+       id="Capa_1-2"
+       data-name="Capa 1"
+       style="stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         class="cls-1"
+         d="m 29.42,22.3 c 3.61,-0.92 5.66,-3 5.66,-6.34 0,-4.81 -4.22,-7.46 -11,-7.46 H 0 V 36 H 5.76 V 24.83 h 18.18 c 3.68,0 4.56,1.75 4.56,3.08 V 36 h 6 V 27.74 C 34.5,25.25 33,23.28 29.42,22.3 Z M 25.14,19.71 H 5.76 v -6 H 25 c 2.54,0 4.6,1.34 4.6,3 0,1.66 -1.98,3 -4.46,3 z"
+         id="path8"
+         style="fill:#0b0044;stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         class="cls-1"
+         d="m 50.79,30.68 c -5.54,0 -7.19,-2.16 -7.61,-6.41 h 26 L 70.8,19 H 43.18 c 0.42,-3.2 2.07,-5.2 7.61,-5.2 H 72.63 L 74.38,8.5 H 50.79 c -10.13,0 -13.64,4.44 -13.64,13.73 0,9.29 3.51,13.77 13.64,13.77 h 14.79 l 1.76,-5.28 H 50.79"
+         id="path10"
+         style="fill:#0b0044;stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <polygon
+         class="cls-1"
+         points="66.88,36.18 66.88,36.16 66.83,36.18 "
+         id="polygon12"
+         style="fill:#0b0044;stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         class="cls-1"
+         d="M 80.92,0 66.61,44.37 87.6,36 95,44.37 Z m -6.83,36.05 6.82,-22.26 5.18,17 z"
+         id="path14"
+         style="fill:#0b0044;stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         class="cls-1"
+         d="m 128.09,13.77 h -21.76 c -6.6,0 -7.4,3.14 -7.4,8.41 0,5.27 0.8,8.45 7.4,8.45 h 21.76 v 5.31 h -21.76 c -9.9,0 -13.28,-4.71 -13.28,-13.76 0,-9.05 3.38,-13.76 13.28,-13.76 h 21.76 z"
+         id="path16"
+         style="fill:#0b0044;stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         class="cls-1"
+         d="M 161.16,35.93 V 24.72 H 138.1 v 11.21 h -5.75 V 8.45 h 5.75 v 11.17 h 23.06 V 8.45 h 5.74 v 27.48 z"
+         id="path18"
+         style="fill:#0b0044;stroke:#ffffff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
