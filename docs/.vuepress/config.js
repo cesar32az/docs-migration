@@ -3,7 +3,7 @@ const { path } = require("@vuepress/utils");
 
 module.exports = {
   clientAppEnhanceFiles: path.resolve(__dirname, "./enhanceApp.js"),
-  title: "Reach",
+  title: ' ',
   description: description,
   head: [
     ["link", { rel: "icon", href: "/img/reach.svg" }],
