@@ -2,6 +2,7 @@ const { description } = require("../../package");
 const { path } = require("@vuepress/utils");
 
 module.exports = {
+  base:"/migracion/",
   clientAppEnhanceFiles: path.resolve(__dirname, "./enhanceApp.js"),
   title: ' ',
   description: description,
